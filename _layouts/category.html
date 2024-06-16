@@ -1,0 +1,39 @@
+---
+layout: base
+---
+<h1>{{ page.title }}</h1>
+<div>
+  {%- for post in site.categories[page.title] -%}
+    {%- if post.featured-image.path -%}
+    <div class="post-list-post">
+      {%- if post.featured-image.path -%}
+        <img class="list-image" src="{{ post.featured-image.path }}" />
+      {%- endif -%}
+
+      <a class="post-list-headline" href="{{ post.url }}">{{ post.title }}</a>
+      {%- assign date = post.date | date: "%B %-d, %Y" -%}
+      {%- if post.author and post.author-title -%}
+        <p class="post-list-byline">{{post.author}}, {{post.author-title}} | {{ date }}</p>
+      {%- else -%}
+        <p class="post-list-byline">{{ date }}</p>
+      {%- endif -%}
+
+      {%- if post.description -%}
+        {%- assign excerpt = post.description -%}
+      {%- else -%}
+        {%- assign paragraphs = post.content | split: '</p>' -%}
+        {%- assign excerpt = paragraphs[0] | append: '</p>' -%}
+      {%- endif -%}
+
+      {%- assign words = excerpt | strip_html | number_of_words -%}
+      {%- if words > 35 -%}
+        {%- assign truncated_paragraph = excerpt | strip_html | truncatewords: 35, "" | append: "..." -%}
+        <span class="post-list-summary">{{ truncated_paragraph }}</span>
+      {%- else -%}
+        <span class="post-list-summary">{{ excerpt }}</span>
+      {%- endif -%}           
+    </div>
+  {%- endif -%}
+
+{% endfor %}
+</div>

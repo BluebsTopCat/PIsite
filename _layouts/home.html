@@ -1,0 +1,58 @@
+---
+layout: base 
+---
+{%- include featured-stories.html -%}
+<div class="content-container">
+  <div class="main-content">
+    {%- for category in site.categories -%}
+      <div>
+        <h2>{{ category | first }}</h2>
+        {%- assign count = 0 -%}
+        {%- assign category_posts = category[1] | sort: "date" | reverse | limit: 3 -%}
+          {%- for post in category_posts -%}
+            {%- assign count = count | plus: 1 -%}
+            {%- if count <= 3 -%}
+              <div class="post-list-post">
+                {%- if post.featured-image.path -%}
+                  <img class="list-image" src="{{ post.featured-image.path }}" alt="{{ post.featured-image.alt-text }}"/>
+                {%- endif -%}
+
+                <a class="post-list-headline" href="{{ post.url }}">{{ post.title }}</a>
+                {%- assign date = post.date | date: "%B %-d, %Y" -%}
+                {%- if post.author and post.author-title -%}
+                  <p class="post-list-byline">{{post.author}}, {{post.author-title}} | {{ date }}</p>
+                {%- else -%}
+                  <p class="post-list-byline">{{ date }}</p>
+                {%- endif -%}
+
+                {%- if post.description -%}
+                  {%- assign excerpt = post.description -%}
+                {%- else -%}
+                  {%- assign paragraphs = post.content | split: '</p>' -%}
+                  {%- assign excerpt = paragraphs[0] | append: '</p>' -%}
+                {%- endif -%}
+
+                {%- assign words = excerpt | strip_html | number_of_words -%}
+                {%- if words > 35 -%}
+                  {%- assign truncated_paragraph = excerpt | strip_html | truncatewords: 35, "" | append: "..." -%}
+                  <span class="post-list-summary">{{ truncated_paragraph }}</span>
+                {%- else -%}
+                  <span class="post-list-summary">{{ excerpt }}</span>
+                {%- endif -%}          
+              </div>
+            {%- else -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+      </div>
+    {%- endfor -%}
+    {%- unless page.is-sidebar -%}
+      {{ content }}
+    {%- endunless -%}
+  </div>
+  {%- if page.is-sidebar -%}
+  <div class="sidebar">
+    {{ content }}
+  </div>
+  {%- endif -%}
+</div>

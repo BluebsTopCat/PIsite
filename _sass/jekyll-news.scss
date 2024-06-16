@@ -1,0 +1,259 @@
+@import "variables.scss";
+
+body, html {
+  margin-left:7%;
+  margin-right:7%;
+  background-color: $background-color
+}
+@media screen and (max-width: $mobile-width) {
+  body, html {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+a {
+  color: $link-color;
+}
+
+hr {
+  border-top: $border-style;
+}
+
+/* Sidebar and Page Layout Elements */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.sidebar {
+  flex-basis: 25%;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+@media screen and (max-width: calc(#{$mobile-width} + 200px)) {
+  .sidebar {
+    flex-basis: 100%;
+    margin-left: auto;
+   }
+}
+
+/* Header Elements */
+.header-flag {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  object-fit: contain;
+  max-height: 150px;
+}
+@media screen and (max-width: $mobile-width) {
+  .header-flag {
+    width: 100%;
+  }
+}
+
+.header-nav {
+  border-top: $border-style;
+  border-bottom: $border-style;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Footer Elements */
+.footer {
+  margin-top: 20px;
+  border-top: $border-style;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Featured Story Elements */
+
+.featured-stories-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.featured-story {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  width: 33.3%;
+  height: 250px;
+  float: left;
+  border-left: 4px solid $background-color;
+  border-right: 4px solid $background-color;
+}
+@media screen and (max-width: $mobile-width) {
+  .featured-story {
+    width: 100%;
+    border-top: 4px solid $background-color;
+    border-bottom: 4px solid $background-color;
+  }
+}
+
+.featured-story-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.featured-story-headline {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.featured-story-byline {
+  color: white;
+  font-size: 12pt;
+}
+
+.featured-story:hover .featured-story-text {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Story Layout Elements */
+.headline {
+  text-align: center;
+}
+
+.subhed {
+  text-align: center;
+  color: #707070;
+}
+
+.byline {
+  text-align: center;
+  font-weight: normal;
+}
+
+.hed-rule {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* Featured image and cutline */
+.featured-image-container {
+  display: flex;
+  justify-content: center;
+}
+.featured-image {
+  display: inline-block;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;}
+.featured-image img {
+  width: 100%;
+}
+.featured-image figcaption {
+  text-align: right;
+  font-weight: light;
+}
+@media screen and (max-width: $mobile-width) {
+  .featured-image {
+    max-width: 100%;
+  }
+}
+
+/* Article Body Elements*/
+.article-content {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 14pt;
+  line-height: 1.5;
+}
+
+/* Post List Elements */
+.post-list-post {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.post-list-post img {
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.post-list-headline {
+  font-weight: bold;
+  color: black;
+  font-size: 16pt;
+}
+
+.post-list-summary {
+  color: grey;
+}
+
+.post-list-byline {
+
+}
+
+.staff-profile {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.staff-profile h2 {
+  font-weight: normal;
+}
+
+.staff-mug {
+  float: left;
+  padding-right: 15px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: calc(#{$mobile-width} - 200px)) {
+  .staff-mug {
+      float: none;       
+  }
+}

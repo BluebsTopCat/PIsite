@@ -1,3 +1,39 @@
-remote_theme: jekyll-news
+# Basic Site Info
 title: Brockton Tribune
-description: Reliable journalism daily,
+description: "Know Your City, Know your World."
+author: Fruity_Lurker
+
+# Site Flag
+flag:
+  show: true
+  path: /assets/flag.png
+
+# Comments
+disqus:
+  enabled: true
+  shortname: Brockton Tribune
+
+# Analytics
+google_analytics: 
+
+# Ads
+adsense:
+  enabled: false
+  data-ad-client:
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+  staff:
+    output: true
+    permalink: /about/staff/:title
+
+# Build settings
+markdown: kramdown
+remote_theme: morpheus636/jekyll-news
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
