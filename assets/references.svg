@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="references.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.0337341"
+     inkscape:cx="286.61048"
+     inkscape:cy="215.4111"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7"
+       inkscape:export-filename="flag.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400">
+      <text
+         xml:space="preserve"
+         style="font-size:14.1111px;line-height:0.8;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';text-align:center;letter-spacing:0.264583px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke:#ffffff;stroke-width:0.350059;stroke-linecap:round;paint-order:stroke markers fill"
+         x="76.886131"
+         y="36.457214"
+         id="text1"
+         inkscape:export-filename="flag.png"
+         inkscape:export-xdpi="400"
+         inkscape:export-ydpi="400"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Chomsky;-inkscape-font-specification:'Chomsky, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0.264583px;fill:#000000;stroke-width:0.350059"
+           x="77.018425"
+           y="36.457214"
+           id="tspan2"><tspan
+   style="font-size:17.6389px"
+   id="tspan3">B</tspan>rockton <tspan
+   style="font-size:17.6389px"
+   id="tspan4">T</tspan>ribune</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.25544px;line-height:0.8;font-family:Chomsky;-inkscape-font-specification:'Chomsky, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0.0488316px;word-spacing:0px;writing-mode:tb-rl;text-anchor:middle;fill:#000000;stroke:#ffffff;stroke-width:0.0184561;stroke-linecap:round;paint-order:stroke markers fill"
+         x="77.252258"
+         y="41.138725"
+         id="text7"><tspan
+           sodipodi:role="line"
+           id="tspan7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.25544px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;stroke-width:0.0184561"
+           x="77.276672"
+           y="41.138725">Know Your City, Know Your World.</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:14.1111px;line-height:0.8;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';text-align:center;letter-spacing:0.264583px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke:#ffffff;stroke-width:0.350059;stroke-linecap:round;paint-order:stroke markers fill;fill-opacity:1"
+       x="74.707062"
+       y="65.782455"
+       id="text1-6"
+       inkscape:export-filename="Icon.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:Chomsky;-inkscape-font-specification:'Chomsky, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0.264583px;fill:#ffffff;stroke-width:0.350059;fill-opacity:1"
+         x="74.839355"
+         y="65.782455"
+         id="tspan2-6"><tspan
+           style="font-size:17.6389px;fill:#ffffff;fill-opacity:1"
+           id="tspan3-4">B</tspan></tspan></text>
+  </g>
+</svg>

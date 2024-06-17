@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<h1>{{ page.title }}</h1>
+<h1 class="category-title">{{ page.title }}</h1>
 <div>
   {%- for post in site.categories[page.title] -%}
     {%- if post.featured-image.path -%}

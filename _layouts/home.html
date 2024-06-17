@@ -6,7 +6,7 @@ layout: base
   <div class="main-content">
     {%- for category in site.categories -%}
       <div>
-        <h2>{{ category | first }}</h2>
+        <h2 class="category-title">{{ category | first }}</h2>
         {%- assign count = 0 -%}
         {%- assign category_posts = category[1] | sort: "date" | reverse | limit: 3 -%}
           {%- for post in category_posts -%}
