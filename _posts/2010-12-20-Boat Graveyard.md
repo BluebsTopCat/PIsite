@@ -4,7 +4,7 @@ subhed: Sunk costs, and denial of obligation.
 author: Eve Whitner
 author-title: Senior Writer
 featured-image: 
-  path: /assets/boatgraveyard.jpg
+  path: /PIsite/assets/boatgraveyard.jpg
   cutline: The boat graveyard, cira last August.
   credit: Unknown
 layout: post
