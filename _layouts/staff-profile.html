@@ -17,7 +17,7 @@ layout: base
         {%- if post.featured-image.path -%}
           <div class="featured-story" style="background-image: url('{{post.featured-image.path}}');">
             <div class="featured-story-text">
-              <a class="featured-story-headline" href="{{ post.url }}">{{ post.title }}</a>
+              <a class="featured-story-headline" href="/PIsite{{ post.url }}">{{ post.title }}</a>
               {%- assign date = post.date | date: "%B %-d, %Y" -%}
               <p class="featured-story-byline">{{ date }}</p>
             </div>

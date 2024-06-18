@@ -16,7 +16,7 @@ layout: base
       {%- assign profile-link = profile.url -%}
     {%- endif -%}
   {%- endfor -%}
-    <h3 class="byline"><a href="{{profile-link}}">{{page.author}}</a>, {{page.author-title}} | {{ date }}</h3>
+    <h3 class="byline"><a href="/PIsite{{profile-link}}">{{page.author}}</a>, {{page.author-title}} | {{ date }}</h3>
 {%- else -%}
   <h3 class="byline">{{ date }}</h3>
 {%- endif -%}
