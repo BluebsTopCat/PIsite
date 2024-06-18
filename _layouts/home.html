@@ -17,7 +17,7 @@ layout: base
                   <img class="list-image" src="{{ post.featured-image.path }}" alt="{{ post.featured-image.alt-text }}"/>
                 {%- endif -%}
 
-                <a class="post-list-headline" href="{{ post.url }}">{{ post.title }}</a>
+                <a class="post-list-headline" href="/PISite{{ post.url }}">{{ post.title }}</a>
                 {%- assign date = post.date | date: "%B %-d, %Y" -%}
                 {%- if post.author and post.author-title -%}
                   <p class="post-list-byline">{{post.author}}, {{post.author-title}} | {{ date }}</p>
