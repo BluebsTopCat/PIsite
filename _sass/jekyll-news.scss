@@ -76,6 +76,14 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
 }
+.nav-list2 {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .nav-link {
   display: inline-block;
