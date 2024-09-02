@@ -4,7 +4,7 @@ subhed:
 author: Jas Auburn
 author-title: Junior Writer
 featured-image: 
-  path: /PIsite/assets/rcbinter.png
+  path: /assets/rcbinter.png
   cutline: 
   credit: In House Photographer
 layout: post
