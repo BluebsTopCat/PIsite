@@ -12,6 +12,19 @@ body, html {
   }
 }
 
+
+.advert{
+  width: 500px;
+  height: fit-content;
+  background-color: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center{
+text-align: center;
+}
+   
 a {
   color: $link-color;
 }

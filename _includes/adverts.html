@@ -1,0 +1,38 @@
+<head>
+    
+</head><script type="text/javascript">
+    var imageURLs = [
+         "/assets/ad1.png"
+       , "/assets/ad2.png"
+       , "/assets/ad3.png"
+       , "/assets/ad4.png"
+       , "/assets/ad5.png"
+       , "/assets/ad6.png"
+       , "/assets/ad7.png"
+        , "/assets/ad8.png"
+    ];
+    var imagetags = [
+         "An Advertisement for Fortress Construction."
+       , "An Enlistment Advertisement for the PRT."
+       , "An Advertisement for 'Good Dog' Murals and Supplies."
+       , "An Advertisement for Medhall Pharmeceauticals."
+       , "An Advertisement for Fugly Bob's Hamburgers."
+       , "An Advertisement for Warehouse Pizza."
+       , "An Advertisement for Turk's Teahouse and Percussive Solutions"
+       , "An Advertisement for Nem's Apiary."
+    ];
+    function getImageTag() {
+      var img = '<img class="advert" src=\"';
+      var randomIndex = Math.floor(Math.random() * imageURLs.length);
+      img += imageURLs[randomIndex];
+      img += '\" alt=\"' + imagetags[randomIndex] + '\"/>';
+      return img;
+    }
+  </script>
+</head>
+<body>
+    <p class="center">This Page is Sponsored by:</p>
+    <script type="text/javascript">
+        document.write(getImageTag());
+      </script>
+</body>
